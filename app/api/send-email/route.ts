@@ -18,27 +18,32 @@ async function handler(req: NextRequest) {
         );
       }
 
-      // Verify with Abstract API
-      const response = await fetch(
-        `https://emailvalidation.abstractapi.com/v1/?api_key=${process.env.ABSTRACT_API_KEY}&email=${senderEmail}`,
-        { cache: "no-store" }
-      );
+      // Try Abstract API verification, but don't block on failure
+      try {
+        const apiKey = process.env.ABSTRACT_API_KEY;
+        if (apiKey) {
+          const response = await fetch(
+            `https://emailvalidation.abstractapi.com/v1/?api_key=${apiKey}&email=${senderEmail}`,
+            { cache: "no-store" }
+          );
 
-      if (!response.ok) {
-        throw new Error("Failed to verify email");
-      }
+          if (response.ok) {
+            const data = await response.json();
+            const isValid =
+              data.is_valid_format?.value &&
+              data.deliverability === "DELIVERABLE" &&
+              !data.is_disposable_email?.value;
 
-      const data = await response.json();
-      const isValid =
-        data.is_valid_format.value &&
-        data.deliverability === "DELIVERABLE" &&
-        !data.is_disposable_email.value;
-
-      if (!isValid) {
-        return NextResponse.json(
-          { error: "Invalid email address" },
-          { status: 400 }
-        );
+            if (!isValid) {
+              return NextResponse.json(
+                { error: "Invalid or disposable email address" },
+                { status: 400 }
+              );
+            }
+          }
+        }
+      } catch (apiError) {
+        console.warn("Abstract API verification failed, proceeding with basic validation:", apiError);
       }
     }
 
