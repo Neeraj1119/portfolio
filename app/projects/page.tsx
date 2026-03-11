@@ -44,7 +44,7 @@ const projects: Project[] = [
     title: "EMart – Full Stack E-Commerce Platform",
     description:
       "A dual-backend e-commerce system built with Spring Boot and ASP.NET Core (.NET 8), featuring JWT authentication and Google OAuth2 sign-on. Includes dynamic pricing engine supporting multi-passenger types and room allocation logic, and automated post-payment workflows with PDF invoice generation and email delivery.",
-    media: { type: "image", src: "/projects/fleeman.webp" },
+    media: { type: "image", src: "/projects/emart.webp" },
     tags: ["Java", "Spring Boot", "ASP.NET Core", "MySQL", "JWT", "ReactJS"],
     link: "",
     github: "https://github.com/Neeraj1119",
@@ -54,7 +54,7 @@ const projects: Project[] = [
     title: "128-Point FFT Processor for MIMO-OFDM",
     description:
       "A high-efficiency 128-point FFT processor using Radix-2 and Radix-8 algorithms in MATLAB for real-time signal processing in MIMO-OFDM communication systems. Features a split-radix approach with a custom complex multiplier, reducing hardware complexity by 20-30% while handling 1-4 concurrent data sequences.",
-    media: { type: "image", src: "/projects/gitsplit.webp" },
+    media: { type: "image", src: "/projects/fft_cover.webp" },
     tags: ["MATLAB", "Radix-2", "Radix-8", "Signal Processing", "MIMO-OFDM"],
     link: "",
     github: "https://github.com/Neeraj1119",
