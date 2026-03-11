@@ -43,7 +43,7 @@ const projects: Project[] = [
     id: 1,
     title: "EMart – Full Stack E-Commerce Platform",
     description:
-      "A dual-backend e-commerce system built with Spring Boot and ASP.NET Core (.NET 8), featuring JWT authentication and Google OAuth2 sign-on. Includes dynamic pricing engine supporting multi-passenger types and room allocation logic, and automated post-payment workflows with PDF invoice generation and email delivery.",
+      "A dual-backend e-commerce system built with Spring Boot and ASP.NET Core (.NET 8), featuring JWT authentication and Google OAuth2 sign-on. Registered members can browse and purchase items across various categories, with support for dynamic discounts and loyalty-point redemption. The system is fully database-driven for flexibility and easy maintenance, and automatically emails PDF invoices upon successful transactions.",
     media: { type: "image", src: "/projects/emart.webp" },
     tags: ["Java", "Spring Boot", "ASP.NET Core", "MySQL", "JWT", "ReactJS"],
     link: "",
