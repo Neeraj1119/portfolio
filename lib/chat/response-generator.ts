@@ -120,7 +120,7 @@ export function generateStructuredResponse(queryType: string): StructuredContent
             {
                 title: "PG Diploma in Advanced Computing (PG-DAC)",
                 institution: "C-DAC Sm-Vita, Mumbai",
-                period: "Aug 2024 - Mar 2025",
+                period: "Aug 2025 - Feb 2026",
                 description: "Postgraduate Diploma in Advanced Computing",
             },
             {

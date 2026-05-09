@@ -13,7 +13,7 @@ I am a Full Stack Developer and C-DAC PGDAC graduate with hands-on experience bu
 
 Education:
 
-C-DAC Sm-Vita, Mumbai | Post Graduate Diploma in Advanced Computing (PG-DAC) | Aug 2024 - Mar 2025
+C-DAC Sm-Vita, Mumbai | Post Graduate Diploma in Advanced Computing (PG-DAC) | Aug 2025 - Feb 2026
 
 Fr. Conceicao Rodrigues Institute of Technology, Mumbai | BE in Electronics & Telecommunication Engineering | Jun 2021 - May 2025
 

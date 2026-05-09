@@ -21,7 +21,7 @@ export default function ExperiencePage() {
             </div>
             <p className="text-neutral-300 text-xs sm:text-sm leading-relaxed">
               Completed a Postgraduate Diploma in Advanced Computing
-              (PG-DAC) from C-DAC Sm-Vita, Mumbai (Aug 2024 - Mar 2025). Focused on full-stack
+              (PG-DAC) from C-DAC Sm-Vita, Mumbai (Aug 2025 - Feb 2026). Focused on full-stack
               development with Java, Spring Boot, ASP.NET Core, and hands-on project building.
             </p>
           </div>
