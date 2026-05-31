@@ -5,7 +5,7 @@ export default function PDFViewer() {
   const [iframeHeight, setIframeHeight] = useState("800px");
   const [isMobile, setIsMobile] = useState(false);
 
-  const resumePath = "/Neeraj_Patil_Resume_Updated.pdf";
+  const resumePath = "/Neeraj_Patil_Resume.pdf";
 
   useEffect(() => {
     // Set a timeout to consider the PDF loaded after 2 seconds
